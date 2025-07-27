@@ -14,7 +14,7 @@ import warnings
 # from mambaConfig import mambaConfig
 
 class TrajDataset(Dataset):
-    def __init__(self, dataset='CD', data_path_prefix="/data0/yuchen/mixer/ten_one_prediction_",
+    def __init__(self, dataset='CD', data_path_prefix="./data/",
                  data_path="", size=[10, 1], flag='train'):
         super().__init__()
 
@@ -22,7 +22,7 @@ class TrajDataset(Dataset):
         self.flag = flag
         self.data_path = data_path
 
-        self.data_path = "{}_{}_".format(dataset, flag) + data_path
+        self.data_path = "{}_demo_{}_".format(dataset, flag) + data_path    # add demo only for demo data.
 
         self.seq_len = size[0]
         self.pred_len = size[1]
