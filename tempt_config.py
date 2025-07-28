@@ -6,7 +6,7 @@ class TEMPTConfig():
         self.device="cuda:0" if self.use_gpu else "cpu"
         self.data="m3"
         self.dataset="CD"
-        self.data_path="./data/XA_longterm_in400_out10.npy"
+        self.data_path="./data/XA_shortterm_in30_out1.npy"
         self.num_workers=4
         self.in_chn=2
         self.out_chn=2
