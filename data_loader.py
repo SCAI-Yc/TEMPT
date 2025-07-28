@@ -37,9 +37,3 @@ class TrajDataset(Dataset):
     def __len__(self):
         return len(self.pred_pairs)
     
-    
-
-        return input_seq, pred_seq
-    
-    def __len__(self):
-        return len(self.pred_pairs)
